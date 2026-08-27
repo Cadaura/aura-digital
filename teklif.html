@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qiymət Təklifi Al | Aura Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/Title_logo.png">
+    <script src="script.js" defer></script>
+    <style>
+        /* Bu səhifəyə aid xüsusi form detalları */
+        
+        .quote-form {
+            background: #12141a;
+            padding: 3rem;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .form-group {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .form-group label {
+            font-size: 0.9rem;
+            color: #7a8294;
+            letter-spacing: 0.5px;
+        }
+        
+        .quote-form input,
+        .quote-form select,
+        .quote-form textarea {
+            width: 100%;
+            padding: 1rem;
+            background: #0b0c10;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            color: #e0e2e6;
+            border-radius: 2px;
+            outline: none;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+        
+        .quote-form input:focus,
+        .quote-form select:focus,
+        .quote-form textarea:focus {
+            border-color: #1e3a8a;
+        }
+        /* Select oxunu xüsusi rəngləmək üçün */
+        
+        .quote-form select {
+            appearance: none;
+            cursor: pointer;
+        }
+        
+        @media (max-width: 600px) {
+            .form-row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">AURA<span>DIGITAL</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html#hero">Ana Səhifə</a></li>
+                <li><a href="index.html#ecosystem">Ekosistem</a></li>
+                <li><a href="haqqimizda.html">Haqqımızda</a></li>
+                <li><a href="elaqe.html">Əlaqə</a></li>
+            </ul>
+        </nav>
+        <a href="teklif.html" class="btn-quote" style="background-color: transparent; border-color: #7a8294; color: #e0e2e6;">Qiymət Təklifi Al</a>
+    </header>
+
+    <!-- Təklif Forması Bölməsi -->
+    <section class="contact-page-container" style="min-height: calc(100vh - 80px);">
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <h2>Layihəniz Üçün Həllər</h2>
+            <p style="color: #7a8294;">Aura Digital xidmətlərindən yararlanmaq üçün tələblərinizi qeyd edin, sizə ən uyğun təklifi hazırlayaq.</p>
+        </div>
+
+        <form class="quote-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Ad və Soyad</label>
+                    <input type="text" id="name" placeholder="Məs: Əli Əliyev" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-poçt Ünvanı</label>
+                    <input type="email" id="email" placeholder="nümunə@mail.com" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">Əlaqə Nömrəsi</label>
+                    <input type="tel" id="phone" placeholder="+994 (__) ___-__-__" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Maraqlandığınız Xidmət</label>
+                    <select id="service" required>
+                        <option value="" disabled selected>Zəhmət olmasa seçin...</option>
+                        <option value="auracad">AuraCad (Avtomatlaşdırma və LISP)</option>
+                        <option value="auracore">Aura Core (Avtomatik Açılış və Hesabat)</option>
+                        <option value="auraweb">Aura Web (Vebsayt və Hostinq)</option>
+                        <option value="other">Digər Mühəndislik Həlləri</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="details">Layihə Detalları</label>
+                <textarea id="details" rows="5" placeholder="Görmək istədiyiniz iş və ya mövcud probleminiz haqqında qısa məlumat verin..." required></textarea>
+            </div>
+
+            <button type="button" class="card-btn" style="align-self: center; padding: 1rem 3rem; background-color: #1e3a8a; border-color: #1e3a8a; color: #fff;">Təklif İstə</button>
+        </form>
+    </section>
+
+    <!-- Footer və Copyright -->
+    <footer class="site-footer">
+        <div class="stats">
+            <h4>İndiyə kimi görülən işlər</h4>
+            <div class="counter-wrap">
+                <span id="work-counter" data-target="7">0</span><span style="color: #1e3a8a;">+</span>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="#" class="social-item">
+                <span class="social-icon">
+                    <svg viewBox="0 0 24 24"><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </span> @AuraDigital
+            </a>
+            <a href="#" class="social-item">
+                <span class="social-icon">
+                    <svg viewBox="0 0 448 512"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg>
+                </span> @AuraDigital
+            </a>
+            <a href="#" class="social-item">
+                <span class="social-icon">
+                    <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </span> @AuraDigital
+            </a>
+            <a href="#" class="social-item">
+                <span class="social-icon">
+                    <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                </span> @AuraDigital
+            </a>
+        </div>
+    </footer>
+
+    <div class="copyright-bar">
+        <div class="copyright-left">
+            © 2026 Bütün hüquqlar qorunur.
+        </div>
+        <div class="copyright-right">
+            Created by <span>Aura Digital</span>
+        </div>
+    </div>
+</body>
+
+</html>

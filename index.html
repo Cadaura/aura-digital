@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Digital | Ana Səhifə</title>
+    <link rel="icon" type="image/png" href="assets/Title_logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">AURA<span>DIGITAL</span></div>
+        <nav>
+            <ul class="nav-links">
+                <!-- Ana səhifə daxilindəki keçidlər üçün # istifadə olunur -->
+                <li class="active"><a href="#hero">Ana Səhifə</a></li>
+                <li><a href="#ecosystem">Ekosistem</a></li>
+                <li><a href="haqqimizda.html">Haqqımızda</a></li>
+                <li><a href="elaqe.html">Əlaqə</a></li>
+            </ul>
+        </nav>
+        <!-- Ən sağdakı yeni oval düymə -->
+        <a href="teklif.html" class="btn-quote">Qiymət Təklifi Al</a>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="floating-elements-container">
+            <!-- Gelecek Aura digital app lerin logolari ucun -->
+            <div class="float-item type-auradigital-1">
+                <img src="assets/Aura Cad.png" alt="AuraCad" style="width: 50px; height: auto; opacity: 0.6;">
+            </div>
+            <div class="float-item type-auradigital-2">
+                <img src="assets/Aura Core.png" alt="AuraCore" style="width: 70px; height: auto; opacity: 0.5;">
+            </div>
+
+            <!-- PDF Elementləri (2 ədəd) -->
+            <div class="float-item type-pdf-1">
+                <img src="assets/pdf_1.png" alt="PDF" style="width: 100px; height: auto; opacity: 0.6;">
+            </div>
+            <div class="float-item type-pdf-2">
+                <img src="assets/pdf_2.png" alt="PDF" style="width: 70px; height: auto; opacity: 0.4;">
+            </div>
+
+            <!-- DWG Elementləri (2 ədəd) -->
+            <div class="float-item type-dwg-1">
+                <img src="assets/dwg_1.png" alt="DWG" style="width: 110px; height: auto; opacity: 0.5;">
+            </div>
+            <div class="float-item type-dwg-2">
+                <img src="assets/dwg_2.png" alt="DWG" style="width: 80px; height: auto; opacity: 0.3;">
+            </div>
+
+            <!-- Other Elementləri (5 ədəd) -->
+            <div class="float-item type-other-1">
+                <img src="assets/other_1.png" alt="Other" style="width: 60px; height: auto; opacity: 0.4;">
+            </div>
+            <div class="float-item type-other-2">
+                <img src="assets/other_2.png" alt="Other" style="width: 50px; height: auto; opacity: 0.4;">
+            </div>
+            <div class="float-item type-other-3">
+                <img src="assets/other_3.png" alt="Other" style="width: 50px; height: auto; opacity: 0.4;">
+            </div>
+            <div class="float-item type-other-4">
+                <img src="assets/other_4.png" alt="Other" style="width: 50px; height: auto; opacity: 0.4;">
+            </div>
+            <div class="float-item type-other-5">
+                <img src="assets/other_5.png" alt="Other" style="width: 50px; height: auto; opacity: 0.4;">
+            </div>
+
+            <!-- Diger yazilar -->
+            <div class="float-item type-text type-text-1">KONSTRUKSİYA</div>
+            <div class="float-item type-text type-text-2">DWG</div>
+            <div class="float-item type-text type-text-3">AURACAD</div>
+            <div class="float-item type-text type-text-4">PDF</div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-text">
+<h1>Mühəndislikdə <br><span style="color: #aab7df;">Yeni Standart</span></h1>
+                <p>Aura Digital ilə hər şeyi optimallaşdırın və avtomatlaşdırın.</p>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <!-- İnteraktiv 3D Rigel Qutusu -->
+            <div class="interactive-rigel-container">
+
+                <!-- QAT 1: Beton Konturları və Oxlar (Sütun + Rigel gövdəsi) -->
+                <div class="rigel-layer layer-concrete">
+                    <div class="column col-left"></div>
+                    <div class="column col-right"></div>
+                    <div class="beam-body"></div>
+                    <div class="axis-group">
+                        <div class="axis">
+                            <div class="axis-line"></div><span>A</span></div>
+                        <div class="axis">
+                            <div class="axis-line"></div><span>B</span></div>
+                    </div>
+                </div>
+
+                <!-- QAT 2: Xamutlar və İşarələr -->
+                <div class="rigel-layer layer-stirrups">
+                    <div class="stirrup s1"></div>
+                    <div class="stirrup s2"></div>
+                    <div class="stirrup s3"></div>
+                    <div class="stirrup s4"></div>
+                    <div class="stirrup s5"></div>
+                    <div class="callout c-1">
+                        <div class="callout-line"></div>
+                        <span>1</span>
+                    </div>
+                    <div class="callout c-2">
+                        <span>2</span>
+                        <div class="callout-line-bottom"></div>
+                    </div>
+                </div>
+
+                <!-- QAT 3: Göy Əsas Armaturlar (Kənarları qıvrılmış) -->
+                <div class="rigel-layer layer-rebars-main">
+                    <div class="rebar blue-main top-main"></div>
+                    <div class="rebar blue-main bottom-main"></div>
+                </div>
+
+                <!-- QAT 4: Bənövşəyi Əlavə Armaturlar (Ən üstdə uçan) -->
+                <div class="rigel-layer layer-rebars-extra">
+                    <div class="rebar purple-extra extra-left"></div>
+                    <div class="rebar purple-extra extra-mid">
+                        <div class="capsule"></div>
+                    </div>
+                    <div class="rebar purple-extra extra-right"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<section id="ecosystem" class="products-section">
+        <div class="section-header">
+            <h2>Aura Ekosistemi</h2>
+        </div>
+
+        <div class="cards-grid">
+            <div class="product-card">
+                <div class="logo-box logo-ac">AC</div>
+                <h3>Aura Cad</h3>
+                <p>Lahiyələrinizi optimallaşdiran əmr yazmadan, widget qisa yollari ilə sürətli komanda vermək.
+                    <br>İstədiyiniz lispləri hətta özünüzün də əlavə etdiyi lispləri Aura Cad ilə əmr vermədən qisa yollar ilə istifadə edə bilərsiniz.</p>
+                <a href="auracad.html" class="card-btn">Aura Cad ilə Tanış Olun</a>
+            </div>
+
+            <div class="product-card">
+                <div class="logo-box logo-co">CO</div>
+                <h3>Aura Core</h3>
+                <p>Sizin cizgilərinizə və layerlərinizə uyğun, xüsusi alqoritmlərlə avtomatik açılışlar edən və həmən açiliş üstündən hesabat edən mühərrik.
+                    <br>Vaxtiniza qənaətı 10 dəfə edin və səhvləri minimuma endirin!</p>
+                <a href="auracore.html" class="card-btn">Aura Core ilə Nə Edə Bilərsən?</a>
+            </div>
+
+            <div class="product-card">
+                <div class="logo-box logo-aw">AW</div>
+                <h3>Aura Web</h3>
+                <p>Müasir bizneslər üçün dizayn edilmiş sürətli və təhlükəsiz web layihələr.
+                    <br>Həmçinin web hosting xidmətləri.</p>
+                <a href="#" class="card-btn">Aura Web Xidmətlərimiz</a>
+            </div>
+        </div>
+    </section>
+
+<!-- ========================================== -->
+    <!-- AURA İNNOVASİYASI (Video Reklam Bölməsi) -->
+    <!-- ========================================== -->
+    <section id="showcase" class="showcase-section">
+        <div class="section-header">
+            <h2>Aura İnnovasiyası</h2>
+            <p>Azərbaycanda İlk Avtomatlaşdırılmış Mühəndislik Sistemi</p>
+        </div>
+
+        <!-- 1. BLOK: Video Solda, Yazı Sağda -->
+        <div class="showcase-container">
+            <div class="showcase-media">
+                <video class="aura-promo-video" autoplay loop muted playsinline>
+                    <source src="assets/AuraDigital.mp4" type="video/mp4">
+                    Sizin brauzeriniz video teqini dəstəkləmir.
+                </video>
+            </div>
+            <div class="showcase-content">
+                <h3>Sürət, Dəqiqlik və Təhlükəsizlik</h3>
+                <p>Aura Digital, ənənəvi çertyoj və hesabat proseslərini xüsusi alqoritmlərlə əvəz edir. Saatlar alan işləri saniyələr içində xətasız tamamlamaq artıq xəyal deyil.</p>
+                <ul class="showcase-features">
+                    <li>10x Daha sürətli layihələndirmə</li>
+                    <li>İnsan xətasının minimuma endirilməsi</li>
+                    <li>Tam avtomatlaşdırılmış spesifikasiyalar</li>
+                </ul>
+                <a href="teklif.html" class="card-btn">Sistemlə Yaxından Tanış Olun</a>
+            </div>
+        </div>
+
+        <!-- 2. BLOK: Yazı Solda, Video Sağda (.reverse-row klassı ilə yerləri dəyişir) -->
+        <div class="showcase-container reverse-row">
+            <div class="showcase-media">
+                <!-- Gələcəkdə bura başqa bir Aura videosu (məsələn AuraCad.mp4) qoya bilərsən -->
+                <video class="aura-promo-video" autoplay loop muted playsinline>
+                    <source src="assets/AuraCore Full Video _1.mp4" type="video/mp4">
+                    Sizin brauzeriniz video teqini dəstəkləmir.
+                </video>
+            </div>
+            <div class="showcase-content">
+                <h3>Ağıllı Alqoritmlərlə İş Akışı</h3>
+                <p>Layihələndirmə prosesində təkrarlanan addımları unudun. Aura sistemi sizin əvəzinizə düşünür, analiz edir və layihəyə uyğun ən optimal həlli anında tətbiq edir.</p>
+                <ul class="showcase-features">
+                    <li>Avtomatik rigel və sütun açılışları</li>
+                    <li>Dinamik cizgi yenilənməsi</li>
+                    <li>Resurslara və vaxta qənaət</li>
+                </ul>
+                <a href="teklif.html" class="card-btn">İndi Sifariş Verin</a>
+            </div>
+        </div>
+
+        <!-- 3. BLOK: Şəkil Solda, Yazı Sağda -->
+        <div class="showcase-container">
+            <div class="showcase-media">
+                <!-- Şəkil üçün img teqi istifadə edirik -->
+                <img src="assets/interface_1.png" alt="Aura Interface" class="aura-promo-image">
+            </div>
+            <div class="showcase-content">
+                <h3>Müasir və Sadə İnterfeys</h3>
+                <p>Hər bir mühəndisin rahatlıqla istifadə edə biləcəyi anlaşılan dizayn. Kompleks AutoLISP kodlarını yazmadan, yalnız vizual düymələrlə ən çətin hesablamaları aparın.</p>
+                <ul class="showcase-features">
+                    <li>User-friendly (İstifadəçi dostu) panel</li>
+                    <li>Heç bir əmr yazmadan, Widget ilə istifadə</li>
+                    <li>Gələcəyə hesablanmış infrastruktur</li>
+                </ul>
+                <a href="teklif.html" class="card-btn">Bizimlə Əlaqə Saxlayın</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="stats">
+            <h4>İndiyə kimi görülən işlər</h4>
+            <div class="counter-wrap">
+                <span id="work-counter" data-target="7">0</span><span style="color: #1e3a8a;">+</span>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="#" class="social-item">
+                <span class="social-icon">
+                    <!-- Instagram Logo -->
+                    <svg viewBox="0 0 24 24"><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </span> @AuraDigital
+            </a>
+            <a href="#" class="social-item">
+                <span class="social-icon">
+                    <!-- TikTok Logo -->
+                    <svg viewBox="0 0 448 512"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg>
+                </span> @AuraDigital
+            </a>
+            <a href="#" class="social-item">
+                <span class="social-icon">
+                    <!-- Facebook Logo -->
+                    <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </span> @AuraDigital
+            </a>
+            <a href="#" class="social-item">
+                <span class="social-icon">
+                    <!-- YouTube Logo -->
+                    <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                </span> @AuraDigital
+            </a>
+        </div>
+    </footer>
+    <!-- Yeni Copyright Zolağı -->
+    <div class="copyright-bar">
+        <div class="copyright-left">
+            © 2026 Bütün hüquqlar qorunur.
+        </div>
+        <div class="copyright-right">
+            Created by <span>Aura Digital</span>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
